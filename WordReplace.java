@@ -13,7 +13,7 @@ public class WordReplace {
 		String line;
 		while ((line = vocabListReader.readLine()) != null)
 	      {
-			content = content.replaceAll(" " + line + " ", " <mark>"+line+"</mark> ");
+			content = content.replaceAll(" " + line, " <mark>"+line+"</mark>");
 	      }
 		
 		vocabListReader.close();

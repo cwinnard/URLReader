@@ -1,4 +1,3 @@
-import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -10,7 +9,7 @@ public class URLWriter {
 		}
 		
 		FileCreator.createNewHTMLFile();
-		BufferedWriter urlWriter = new BufferedWriter(new FileWriter("src/VocabHTMLTest.html", true));
+		FileWriter urlWriter = new FileWriter("src/VocabHTMLTest.html", true);
 		urlWriter.write(content);
 		urlWriter.close();
 	}
