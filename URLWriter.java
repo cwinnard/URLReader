@@ -10,7 +10,7 @@ public class URLWriter {
 		}
 		
 		FileCreator.createNewHTMLFile();
-		BufferedWriter urlWriter = new BufferedWriter(new FileWriter("src/VocabHTMLTest.html", true));
+		FileWriter urlWriter = new FileWriter(new FileWriter("src/VocabHTMLTest.html", true));
 		urlWriter.write(content);
 		urlWriter.close();
 	}
